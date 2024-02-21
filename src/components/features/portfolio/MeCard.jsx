@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import myPhoto from "../../../assets/osora-pressing-2.jpg";
+import myPhoto from "../../../assets/osora-pressing.png";
 // import dottedSmall from "../../assets/icons/bg-dottedsmall.svg";
 import quotes from "../../../assets/icons/quotes.svg";
 import dottedBg from '../../../assets/icons/bg-dottedsmall.svg'
