@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* @apply transition-colors duration-200; */
+
+}
+
+html, body {
+  min-width: 350px;
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial;
+
+}
+
+
+/* .container {
+  width: 100%;
+  margin: 0 auto OR custom;
+  padding: custom;
+  box-sizing: border-box
+} */
+
+/* main bg-color rgb(90,255,128); */
+/* secondary bg-color rgb(2,255,85) */
+/* hover  rgb(78, 233, 114) */
+/* rgb(31,31,31) */
+
+.hero {
+  font-family:'Times New Roman', Times, serif ;
+}
+
+.right-anime {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    color: #e4e1f3;
+
+}
+.left-anime {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+
+}
+
+.buttom-anime {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+}
+
+/* .container {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .container {
+      max-width: 480px;
+  }
+}
+@media (min-width: 770px) {
+  .container {
+      max-width: 770px;
+  }
+}
+@media (min-width: 1020px) {
+  .container {
+      max-width: 1020px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1200px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+      max-width: 1300px;
+  }
+} */
+
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform:  translateX(-100px);
+  }
+
+  80%{ 
+      transform: translate(10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform:  translateX(100px);
+  }
+
+  80%{ 
+      transform: translate(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+.ex {
+  animation-name: animista;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+ @keyframes animista {
+  0% {
+    transform: scale(1);
+  }
+  
+  80% {
+    transform: scale(5)
+
+  }
+  100% {
+    transform: scale(0)
+  }
+ }
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* Infinite animation */
+/* .infinite-slide {
+  animation: loop 35s linear infinite;
+}
+
+.infinite-slide-parent:hover {
+  .infinite-slide {
+    animation-play-state: paused;
+  }
+}
+
+.infinite-slide-parent::before {
+  @apply sm:w-64 w-20;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.infinite-slide-parent::after {
+  @apply sm:w-64 w-20;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
+/* .carousel-container {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carousel.auto-slide {
+  animation: slide 8s infinite;
+} */
